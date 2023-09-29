@@ -75,10 +75,7 @@ pipeline{
          stage('JFrog Push : Jfrog'){
          when { expression {  params.action == 'create' } }
             steps{
-               script{
-                   
                    sh 'python3 jfrog.py'
-               }
             }
         }
         stage('Docker Image Build'){
