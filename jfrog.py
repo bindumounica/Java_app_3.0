@@ -4,7 +4,7 @@ import subprocess
 # Define the curl command as a list of strings
 curl_command = [
     "curl",
-    "-X","PUT","-u","admin:Mounica@60","-T","./target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar","http://54.158.188.90:8082/artifactory/example-repo-local/" 
+    "-X","PUT","-u","admin:Mounica@60","-T","/home/ubuntu/Java_app_3.0/target/kubernetes-configmap-reload-0.0.1-SNAPSHOT.jar","http://54.158.188.90:8082/artifactory/example-repo-local/" 
 ]
 
 # Define the URL you want to check
